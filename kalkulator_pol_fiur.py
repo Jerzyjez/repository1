@@ -1,6 +1,6 @@
 import math
 
-a=int(input("Podaj liczbę: 1-trójkąt, 2-prostokąt/kwadrat, 3-trapez, 4-koło, 5-romb"))
+a=int(input("Podaj liczbę: 1-trójkąt, 2-prostokąt/kwadrat, 3-trapez, 4-koło, 5-romb 6- rownoleglobok,7-deltoid"))
 def trojkat(bok, wysokość):
     if bok>0 and wysokość>0:
         return bok*wysokość/2
@@ -52,6 +52,16 @@ def romb(przekatna1,przekatna2):
         return 1/2*przekatna1*przekatna2
     else:
         return "zła liczba"
+def deltoid(przekatna1,przekatna2):
+    if przekatna1>0 and przekatna2>0:
+        return 1/2*przekatna1*przekatna2
+    else:
+        return "zła liczba"
+def szesciokat(bok):
+    if bok>0:
+        return bok*bok*1.5*3**0.5
+    else:
+        return "zla dlugosc boku" 
 if a==1:
     b=float(input("Podaj długość boku:"))
     c=float(input("Podaj dłudość Wysokości"))
@@ -84,3 +94,10 @@ elif a==6:
         print(rownoleglobok(b,c))
 else:
     print("Takiej figury nie obsługujemy")
+if liczba==7:
+        b=float(input("Podaj pierwszej przekątnej: "))
+        c=float(input("Podaj długość drugiej przekątnej:: "))
+        print(deltoid(b,c))
+if liczba==8:
+        b=float(input("Podaj dlugosc boku: "))
+        print(szesciokat(b))
