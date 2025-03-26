@@ -8,8 +8,12 @@ def prostopadloscian(bok1,bok2,bok3):
 def walec(promień,wysokość):
     if promień>0 and wysokość>0:
         return promień*wysokość*math.pi*promień
+    elif promień<=0 and wysokość<=0:
+        return "Zła dlugosc promienia i wysokosci"
+    elif promień<=0:
+        return "zla dlugosc promienia"
     else:
-        return "Zła liczba"
+        return "zla dlugosc wysokosci"
 def stozek(promień, wysokość):
     if promień>0 and wysokość>0:
         return promień*promień*wysokość/3
