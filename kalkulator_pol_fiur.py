@@ -22,11 +22,16 @@ def kolo(promień):
         return promień*math.pi
     else:
         return "Zła liczba"
-def romb(podstawa,wysokość):
+def rownoleglobok(podstawa,wysokość):
     if podstawa>0 and wysokość>0:
         return podstawa*wysokość
     else:
         return "Zła liczba"
+def romb(przekatna1,przekatna2):
+    if przekatna1>0 and przekatna2>0:
+        return 1/2*przekatna1*przekatna2
+    else:
+        return "zła liczba"
 if a==1:
     b=float(input("Podaj długość boku:"))
     c=float(input("Podaj dłudość Wysokości"))
@@ -44,9 +49,18 @@ elif a==4:
     b=float(input("Podaj długość promienia koła"))
     print(kolo(b))
 elif a==5:
-    b=float(input("Podaj długość boku:"))
-    c=float(input("Podaj długość wysokośc iopadającej na ten bok: "))
-    print(romb(b,c))
+    liczba=int(input("Podaj sposób w jaki sposób chcesz obliczyć pole rombu: 1-0,5*przękątna1*przekątna2  2-podstawa*wysokość: "))
+    if liczba==2:
+        b=float(input("Podaj długość boku: "))
+        c=float(input("Podaj długość wysokości opadającej na ten bok: "))
+        print(rownoleglobok(b,c))
+    else:
+        b=float(input("Podaj długość pierwszej przekątnej: "))
+        c=float(input("Podaj długość drugiej przekątnej: "))
+        print(romb(b,c))
+elif a==6:
+        b=float(input("Podaj długość boku: "))
+        c=float(input("Podaj długość wysokośc iopadającej na ten bok: "))
+        print(rownoleglobok(b,c))
 else:
-    print("Zła liczba")
-    
+    print("Takiej figury nie obsługujemy")
