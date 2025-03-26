@@ -4,24 +4,44 @@ a=int(input("Podaj liczbę: 1-trójkąt, 2-prostokąt/kwadrat, 3-trapez, 4-koło
 def trojkat(bok, wysokość):
     if bok>0 and wysokość>0:
         return bok*wysokość/2
+    elif bok<=0 and wysokość<=0:
+        return "Zła długość boku i wysokości"
+    elif bok<=0:
+        return "zla dlugosc"
     else:
-        return "zła liczba"
-    
+        return "zla wysokosc"
 def prostokat(bok1, bok2):
     if bok1>0 and bok2>0:
         return bok1*bok2
+    elif bok1<=0 and bok2<=0:
+        return "zla dlugosc onu bokow"
+    elif bok1<=0:
+        return "zla dlugosc pierwszego boku"
     else:
-        return "Zła liczba"
+        return "Niepoprawna dlugosc drugiego bku"
 def trapez (podstawa1,podstawa2 ,wysokość):
     if podstawa1>0 and podstawa2 and wysokość>0:
         return (podstawa1+podstawa2)*wysokość/2
+    elif podstawa1<=0 and podstawa2<=0 and wysokość<=0:
+        return "Zła dlugosc obu bokow i wysokosci"
+    elif podstawa1<=0 and podstawa2<=0:
+        return "zla dlugosc obu podstaw"
+    elif podstawa1<=0 and wysokość<=0:
+        return "zla dlugosc pierwszej podstawy i wyskokosci"
+    elif podstawa2<=0 and wysokość<=0:
+        return "niepoprawna dlugosc drugiej podstawy i wysokosci"
+    elif podstawa1<=0: 
+        return "zla dlugosc podstawy 1"
+    elif podstawa2<=0:
+        return "zla dlugosc podstawy2"
     else:
-        return "Zła liczba"
+        return "zla dlugosc wysokosci"
+
 def kolo(promień):
     if promień>0:
         return promień*math.pi
     else:
-        return "Zła liczba"
+        return "Zła dlugos  promienia kola"
 def rownoleglobok(podstawa,wysokość):
     if podstawa>0 and wysokość>0:
         return podstawa*wysokość
