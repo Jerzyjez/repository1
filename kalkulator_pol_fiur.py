@@ -59,7 +59,7 @@ def deltoid(przekatna1,przekatna2):
         return "zła liczba"
 def szesciokat(bok):
     if bok>0:
-        return 3**1/2*1.5*bok*bok
+        return 1.5*bok*bok*math.sqrt(3)
     else:
         return "zla dlugosc boku" 
 if a==1:
@@ -92,12 +92,13 @@ elif a==6:
         b=float(input("Podaj długość boku: "))
         c=float(input("Podaj długość wysokośc iopadającej na ten bok: "))
         print(rownoleglobok(b,c))
-else:
-    print("Takiej figury nie obsługujemy")
-if liczba==7:
+            
+elif a==7:
         b=float(input("Podaj pierwszej przekątnej: "))
         c=float(input("Podaj długość drugiej przekątnej:: "))
         print(deltoid(b,c))
-if liczba==8:
+elif a==8:
         b=float(input("Podaj dlugosc boku: "))
         print(szesciokat(b))
+else:
+    print("Takiej figury nie obsługujemy")
