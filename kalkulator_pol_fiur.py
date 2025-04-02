@@ -59,7 +59,7 @@ def deltoid(przekatna1,przekatna2):
         return "zła liczba"
 def szesciokat(bok):
     if bok>0:
-        return bok*bok*1.5*3**0.5
+        return 3**1/2*1.5*bok*bok
     else:
         return "zla dlugosc boku" 
 if a==1:
