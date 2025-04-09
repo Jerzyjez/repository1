@@ -1,6 +1,6 @@
 import math
 
-a=int(input("Podaj liczbę: 1-trójkąt, 2-prostokąt, 3-trapez, 4-koło, 5-romb, 6-równoległobok, 7-deltoid, 8-sześciokąt foremny: "))
+a=int(input("Podaj liczbę: 1-trójkąt, 2-prostokąt, 3-trapez, 4-koło, 5-romb, 6-równoległobok, 7-deltoid, 8-sześciokąt foremny 9-trojkat_rownoboczny: "))
 def trojkat(bok, wysokość):
     if bok>0 and wysokość>0:
         return bok*wysokość/2
@@ -64,9 +64,14 @@ def szesciokat(bok):
         return 1.5*bok*bok*math.sqrt(3)
     else:
         return "Niepoprawna długość boku sześciokąta"
+def trojkat_rownoboczny (bok):
+    if bok>0:
+        return 1.5*bok*bok*math.sqrt(3)/4
+    else:
+        print("niepoprawna dlugosc boku ")  
 if a==1:
     b=float(input("Podaj długość boku: "))
-    c=float(input("Podaj długość wysokości opadającej na ten bok: "))
+    c=float(input("Podaj długość wysokości opadającej na ten bok : "))
     print(trojkat(b,c))
 elif a==2:
     b=float(input("Podaj długość pierwszego boku: "))
@@ -99,7 +104,10 @@ elif a==7:
         c=float(input("Podaj długość drugiej przekątnej: "))
         print(romb(b,c))
 elif a==8:
-    b=float(input("Podaj długość boku: "))
-    print(szesciokat(b))
+        b=float(input("Podaj długość boku: "))
+        print(szesciokat(b))
+elif a==9:
+        b=float(input("Podaj długość boku: "))
+        print(trojkat_rownoboczny(b))
 else:
     print("Taka cyfra nie odpowiada zadnej figurze. Podaj cyfrę ponownie.")
