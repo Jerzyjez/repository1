@@ -7,5 +7,5 @@ while a!=b:
         a-=b
     else:
         b-=a
-        e=c*d/a
+e=c*d/a
 print(e)
