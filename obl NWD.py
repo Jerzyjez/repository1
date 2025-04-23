@@ -1,6 +1,6 @@
 a=int(input("Podaj pierwsza liczbe calkowita wieksza od zera:"))
 b=int(input("Podaj druga liczbe calokowita  wieksza od zera:"))
-if a and b>0:
+if a>0 and b>0:
         while a!=b:
             if a>b:
                 a-=b
@@ -12,5 +12,5 @@ elif a<=0 and b<=0:
 elif b<=0:
     print("druga liczba <0")
 else:
-    print("druga liczba <0 ")
+    print("pierwsza liczba <0 ")
     
