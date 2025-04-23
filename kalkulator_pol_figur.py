@@ -1,10 +1,10 @@
 import math
 
 a=int(input("Podaj liczbę: 1-trójkąt, 2-prostokąt, 3-trapez, 4-koło, 5-romb, 6-równoległobok, 7-deltoid, 8-sześciokąt foremny 9-trojkat_rownoboczny: "))
-def trojkat(bok, wysokość):
-    if bok>0 and wysokość>0:
-        return bok*wysokość/2
-    elif bok<=0 and wysokość<=0:
+def trojkat(bok, wysokosc):
+    if bok>0 and wysokosc>0:
+        return bok*wysokosc/2
+    elif bok<=0 and wysokosc<=0:
         return "Niepoprawna długość boku i wysokości"
     elif bok<=0:
         return "Niepoprawna długość boku"
@@ -19,16 +19,16 @@ def prostokat(bok1,bok2):
         return  "Niepoprawna długość pierwszego boku"
     else:
         return "Niepoprwawna długość drugiego boku"
-def trapez(podstawa1,podstawa2,wysokość):
-    if podstawa1>0 and podstawa2 >0 and wysokość>0:
-        return (podstawa1+podstawa2)*wysokość/2
-    elif podstawa1<=0 and podstawa2<=0 and wysokość<=0:
+def trapez(podstawa1,podstawa2,wysokosc):
+    if podstawa1>0 and podstawa2 >0 and wysokosc>0:
+        return (podstawa1+podstawa2)*wysokosc/2
+    elif podstawa1<=0 and podstawa2<=0 and wysokosc<=0:
         return "Niepoprawna długość obu podstaw i wysokości"
     elif podstawa1<=0 and podstawa2<=0:
         return "Niepoprawna długość obu podstaw"
-    elif podstawa1<=0 and wysokość<=0:
+    elif podstawa1<=0 and wysokosc<=0:
         return "Niepoprawna długość pierwszej podstawy i wysokości"
-    elif podstawa2<=0 and wysokość<=0:
+    elif podstawa2<=0 and wysokosc<=0:
         return "Niepoprawna długość drugiej podstawy i wysokości"
     elif podstawa1<=0:
         return "Niepoprawna długośc pierwszej podstawy"
@@ -36,15 +36,15 @@ def trapez(podstawa1,podstawa2,wysokość):
         return "Niepoprawna długość drugiej podstawy"
     else:
         return "Niepoprawna długość wysokości"
-def kolo(promień):
-    if promień>0:
-        return promień*math.pi
+def kolo(promien):
+    if promien>0:
+        return promien*math.pi
     else:
         return "Niepoprawna długość promienia koła"
-def rownoleglobok(podstawa,wysokość):
-    if podstawa>0 and wysokość>0:
-        return podstawa*wysokość
-    elif podstawa<=0 and wysokość<=0:
+def rownoleglobok(podstawa,wysokosc):
+    if podstawa>0 and wysokosc>0:
+        return podstawa*wysokosc
+    elif podstawa<=0 and wysokosc<=0:
         return "Niepoprawna długość podstawy i wysokości"
     elif podstawa<=0:
         return "Niepoprawna długość podstawy"
