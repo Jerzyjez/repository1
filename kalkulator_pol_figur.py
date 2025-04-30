@@ -56,12 +56,12 @@ def rownoleglobok(podstawa, wysokosc):
     else:
         return "Niepoprawna długość wysokości"
 
-def romb(przekątna1, przekątna2):
-    if przekątna1 > 0 and przekątna2 > 0:
-        return 0.5 * przekątna1 * przekątna2
-    elif przekątna1 <= 0 and przekątna2 <= 0:
+def romb(przekatna1, przekatna2):
+    if przekatna1 > 0 and przekatna2 > 0:
+        return 0.5 * przekatna1 * przekatna2
+    elif przekatna1 <= 0 and przekatna2 <= 0:
         return "Niepoprawna długość obu przekątnych"
-    elif przekątna1 <= 0:
+    elif przekatna1 <= 0:
         return "Niepoprawna długość pierwszej przekątnej"
     else:
         return "Niepoprwawna długośąć drugiej przekątnej"
