@@ -20,5 +20,5 @@ elif a=="papier" and b=="kamien":
     print("przegrales")
 else:
     print("Niepoprawna opcja wpisana")
-
+print(type(b))
 
