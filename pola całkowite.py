@@ -2,7 +2,7 @@ import math
 a=int(input("Podaj liczbę 1-prostopadloscian, 2-walec, 3-stozek, 4-kula: "))
 def prostopadloscian(bok1,bok2,bok3):
     if bok1>0 and bok2>0 and bok3>0:
-        return 2(bok1*bok2+bok2*bok3+bok1*bok3)
+        return 2*(bok1*bok2+bok2*bok3+bok1*bok3)
     elif bok1<=0 and bok2<=0 and bok3<=0:
         return "Niepoprawna długosc wszystkich trzech bokow"
     elif bok1<=0 and bok2<=0:
@@ -45,9 +45,9 @@ def kula(promien):
     else:
         return "Niepoprawna dlugosc promienia"
 if a==1:
-    b=float(input("Podaj dlugosz pierwszego boku" ))
-    c=float(input("Podaj dlugosz drugiego boku" ))
-    d=float(input("Podaj dlugosz trzeciego boku" ))
+    b=float(input("Podaj długosc:" ))
+    c=float(input("Podaj szerokosc:" ))
+    d=float(input("Podaj grubosc:" ))
     print(prostopadloscian(b,c,d))
 elif a==2:
     b=float(input("podaj dlugosc promienia podstawy"))
