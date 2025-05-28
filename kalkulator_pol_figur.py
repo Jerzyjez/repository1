@@ -81,7 +81,7 @@ def trojkat_rownoboczny(bok):
     else:
         print("niepoprawna dlugosc boku ")
 
-def deltoid(przekatna1, przekatna2):
+ def deltoid(przekatna1, przekatna2):
     if przekatna1 > 0 and przekatna2 > 0:
         return 0.5 * przekatna1 * przekatna2
     elif przekatna1 <= 0 and przekatna2 <= 0:
