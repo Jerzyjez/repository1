@@ -1,5 +1,10 @@
 import math
-a=int(input("Podaj liczbę 1-prostopadloscian, 2-walec, 3-stozek, 4-kula: "))
+import sys
+a = input("Podaj liczbę 1-prostopadloscian, 2-stozek, 3-walec, 4-kula: ")
+if not a.isdigit():
+    print("To nie jest liczba. Program zakończony.")
+    sys.exit()
+a = int(a)
 def prostopadloscian(bok1,bok2,bok3):
     if bok1>0 and bok2>0 and bok3>0:
         return 2*(bok1*bok2+bok2*bok3+bok1*bok3)
@@ -44,16 +49,17 @@ def kula(promien):
         return 4*math.pi*promien*promien
     else:
         return "Niepoprawna dlugosc promienia"
+
 if a==1:
     b=float(input("Podaj długosc:" ))
     c=float(input("Podaj szerokosc:" ))
     d=float(input("Podaj grubosc:" ))
     print(prostopadloscian(b,c,d))
-elif a==2:
+elif a==3:
     b=float(input("podaj dlugosc promienia podstawy"))
     c=float(input("Podaj dlugosz wysokosci" ))
     print(walec(b,c))
-elif a==3:
+elif a==2:
      b=float(input("Podaj dlugosz promienia podstawy" ))
      c=float(input("Podaj dlugosz tworzącej" ))
      print(stozek(b,c))

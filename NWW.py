@@ -1,5 +1,14 @@
-a=int(input("podaj pierwsza liczbe calkowita wieksza od zera"))
-b=int(input("podaj druga liczbe calokowita  wieksza od zera"))
+import sys
+a = input("podaj pierwsza liczbe calkowita wieksza od zera")
+b = input("podaj druga liczbe calokowita  wieksza od zera")
+if not a.isdigit():
+    print("To nie jest liczba. Program zakończony.")
+    sys.exit()
+a = int(a)
+if not b.isdigit():
+    print("To nie jest liczba. Program zakończony.")
+    sys.exit()
+a = int(b)
 c=a
 d=b
 if a>0 and b>0:

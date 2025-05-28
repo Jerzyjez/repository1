@@ -1,7 +1,10 @@
 import math
-
-a = int(input("Podaj liczbę: 1-trójkąt, 2-prostokąt, 3-trapez, 4-koło, 5-romb, 6-równoległobok, 7-deltoid, 8-sześciokąt foremny 9-trojkat_rownoboczny: "))
-
+import sys
+a =input("Podaj liczbę: 1-trójkąt, 2-prostokąt, 3-trapez, 4-koło, 5-romb, 6-równoległobok, 7-deltoid, 8-sześciokąt foremny 9-trojkat_rownoboczny: ")
+if not a.isdigit():
+    print("To nie jest liczba. Program zakończony.")
+    sys.exit()
+a = int(a)
 def trojkat(bok, wysokosc):
     if bok > 0 and wysokosc > 0:
         return bok * wysokosc / 2

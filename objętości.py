@@ -1,5 +1,9 @@
 import math
-a=int(input("Podaj liczbę 1-prostopadłościan, 2-walec, 3-ostrosłup, 4-stozek, 5-kula: "))
+a = input("Podaj liczbę 1-prostopadłościan, 2-walec, 3-ostrosłup, 4-stozek, 5-kula: ")
+if not a.isdigit():
+    print("To nie jest liczba. Program zakończony.")
+    sys.exit()
+a = int(a)
 def prostopadloscian(bok1,bok2,bok3):
     if bok1 >0 and bok2 >0 and bok3>0:
         return bok1*bok2*bok3
