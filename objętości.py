@@ -1,6 +1,6 @@
 import math
 import sys
-a = input("Podaj liczbę 1-prostopadłościan, 2-walec, 3-ostrosłup, 4-stozek, 5-kula: ")
+a = input("Podaj liczbę 1-prostopadłościan, 2-walec, 3-stozek, 4-kula: ")
 if not a.isdigit():
     print("To nie jest liczba. Program zakończony.")
     sys.exit()
