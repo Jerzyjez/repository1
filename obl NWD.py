@@ -26,5 +26,5 @@ while a != b:
     else:
         b -= a
 
-print(f"Największy wspólny dzielnik (NWD) to: {a}")
-    
+print("Największy wspólny dzielnik (NWD) to")
+print(a)
